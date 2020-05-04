@@ -1,6 +1,7 @@
 # wal2mongo - Replicate PostgreSQL database to MongoDB using logical decoding plugin
 
 [![Latest release](https://img.shields.io/github/v/release/idrawone/wal2mongo)](https://github.com/idrawone/wal2mongo/releases)
+[![Release date](https://img.shields.io/github/release-date/idrawone/wal2mongo)]
 
 ### Introduction 
 
