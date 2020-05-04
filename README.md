@@ -1,6 +1,7 @@
 # wal2mongo - Replicate PostgreSQL database to MongoDB using logical decoding plugin
 
-[![Latest release](https://img.shields.io/github/release/sorintlab/stolon.svg)](https://github.com/idrawone/wal2mongo/releases)
+[![Latest release](https://img.shields.io/github/release/wal2mongo/wal2mong.svg)](https://github.com/idrawone/wal2mongo/releases)
+
 ### Introduction 
 
 `wal2mongo` is a PostgreSQL logical decoding output plugin designed to make the logical replication easier from `PostgreSQL` to `MongoDB` by formating the output to a JSON-like format accepted by `mongo`.
