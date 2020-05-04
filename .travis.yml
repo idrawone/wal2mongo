@@ -18,7 +18,7 @@ install:
   - sudo apt-get install -y postgresql-common
   #- sudo /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh -p -v $PGVERSION -i
   - sudo apt-get install -y bison flex libicu-dev libssl-dev
-  - sudo -u postgres createuser --superuser $USER
+    #- sudo -u postgres createuser --superuser $USER
 
 script:
   - make
