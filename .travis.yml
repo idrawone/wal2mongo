@@ -37,7 +37,5 @@ deploy:
   provider: releases
   api_key: "GITHUB OAUTH TOKEN"
   file_glob: true
-  file: *.so
+  file: "FILE TO UPLOAD"
   skip_cleanup: true
-  on:
-    tags: true
