@@ -50,3 +50,4 @@ deploy:
   on:
     repo: idrawone/wal2mongo
     branch: release
+    tags: true
