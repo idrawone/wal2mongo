@@ -2,6 +2,8 @@
 ---
 # run once for each of these
 env:
+  global:
+    - secure: klO7Yhrr6MwL9Q9lJyhtqQ/qFag5GfWkxGnEt5X4YT+ymewkREeMo/Tq0p3qFs73gsrZdLU9QYPIxquQ3es0d4gRadbflZvfSiOHU7UJkty85ZGuLk5DxODzBViTcan+RkJ+ur8VugF+sSAJpkR+6qLz+DRK4KyYO4Yhkls3s0+5MsIj2ip++I7AFHHlpsEx8Og6L6d4D5+HEn7oHlQJ28V6gyeZK5CAx5N+KrgzOKbo9SASOWeDiPJnqt4NyAGoHscOROhtLo+8SVtFxoPakK55F6L+jNei9qeHnco7YkR+7/yYfriCxbl3OsTx47XM9JP1AG5Pfee18+ajiHIRg8VoAlLQMQyD64p7c74BFvbWii2OF+k7qqwTrJe1DKY96Shwecay9HUE29UsEHr5M6WLSpC9QmQQq4CG/o7xZXRqNw1qDQvZaceeXy9BKVs2+H5cG8IOhTsD0hOlUWhYl0lWfPi8Y1EWNYO2fmvP/DI0XphalyMZGYoqjOegEU0e6FRNNEyhJOTFp1cO1K12YHmD9lvwW3ZK9LmNRzYraFsSDqQSyYkFAGZyPcBEqfAyFt0xOYg1DtTZvl7KpBPIQi3gUcR4jmu0znTOHGIrk19OIhbDMI5a2kB+8ZjAsvRMCE4TfxMd1Hd6pdwQB2BP6gIHDG2UKmueOqqtb4FUXsQ=
   - PGVERSION=12
 
 language: C
@@ -36,7 +38,7 @@ script:
 deploy:
   provider: releases
   api_key: 
-    secure: 26142379e8e71bc35a392bc0ca43037cc016d6e3
+    secure: GaRvrxsNhrzKcnwzZikysYZoNSGFBzp0GCvzI/C5MBJ78cDKF5bS9MXg+6mKIerGntrzT5pCla4WCrQaJ980+WM3D8v7/fTkuChvKW/4QEIE+4T5EtDtzjvq8//cNYj84JHei7mNbKxQm9Z9BEd+y4TIPyQ2aceuwl9MSmMb03njAuJuRp6SqK7T/8XZ1/nLOKMRhR1DYHrxOiYj33b7/9M5Hshn0RchRDZzz/AiwDXX8DGpB1ru9Arsm4opzPjYz7n+jH1/TgPg9UoQTCd753ye8x0YG49fmUC4PI/U32lHL5fv/VgRKz038luPZzSkIrDfLx2z4cCSZ/Vk0CSRHvqfFfdILR+4nYO8jH2Y5SX167byV8yxYbmuZgKOfubfy31uivCfJKL+LtvAs18jvFdSqJeKogIadsXECuoztA2DZB/9ncUasSNhnbRyShF37JfvmvO2tcMF5TXE14afGmbD/VEXQ2eBIu9KDP3LNQ0bZEZj9EZoBR683ht/dvjV1UBdG5Etmy+CkcYQXFV8O2WyLOCUPzDLOG6/HCaW3Q5GRnl5z8w6hGbOwRsroV3fxPtx46LpyTiRbYxy1Xfbh3cYixKtb0mgzIih+5j0bLy/UxtW0g3lOcK7PZPV7E+4mez5ecNm5OCw4z63HRs0ZMhDNgwdKZGTLkJ/t84MMow=
   file_glob: true
   file: "*.so"
   skip_cleanup: true
