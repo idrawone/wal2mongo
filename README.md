@@ -1,10 +1,15 @@
 # wal2mongo - Replicate PostgreSQL database to MongoDB using logical decoding plugin
 
-[![Latest release](https://img.shields.io/github/v/release/idrawone/wal2mongo)](https://github.com/idrawone/wal2mongo/releases)
+[![Release](https://img.shields.io/github/v/release/idrawone/wal2mongo)](https://github.com/idrawone/wal2mongo/releases)
+![Build](https://travis-ci.com/idrawone/wal2mongo.svg?branch=release)
+![Coverage](https://img.shields.io/coveralls/github/idrawone/wal2mongo)
 ![Release date](https://img.shields.io/github/release-date/idrawone/wal2mongo)
 ![Last commit](https://img.shields.io/github/last-commit/idrawone/wal2mongo)
-![Build Status](https://travis-ci.com/idrawone/wal2mongo.svg?branch=release)
-![Coverage](https://img.shields.io/coveralls/github/idrawone/wal2mongo)
+
+[![Build](https://img.shields.io/travis/idrawone/wal2mongo/release.svg)][status]
+[![Coverage](https://img.shields.io/coveralls/idrawone/wal2mongo/release.svg)][coverage]
+[![Release](https://img.shields.io/github/v/release/idrawone/wal2mongo)](https://github.com/idrawone/wal2mongo/releases)
+[![License](https://img.shields.io/github/license/idrawone/wal2mongo][license]
 
 ### Introduction 
 
