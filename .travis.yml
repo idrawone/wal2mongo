@@ -32,4 +32,6 @@ script:
   - sudo USE_PGXS=1 make install
   - USE_PGXS=1 make installcheck-force
   - if test -s regression.diffs; then cat regression.diffs; fi
+  - cat /home/travis/build/idrawone/wal2mongo/wal2mongo/expected/xml.out
+  - cat /home/travis/build/idrawone/wal2mongo/wal2mongo/results/xml.out
 
