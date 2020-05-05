@@ -36,7 +36,7 @@ script:
 deploy:
   provider: releases
   api_key: 
-    secure: GaRvrxsNhrzKcnwzZikysYZoNSGFBzp0GCvzI/C5MBJ78cDKF5bS9MXg+6mKIerGntrzT5pCla4WCrQaJ980+WM3D8v7/fTkuChvKW/4QEIE+4T5EtDtzjvq8//cNYj84JHei7mNbKxQm9Z9BEd+y4TIPyQ2aceuwl9MSmMb03njAuJuRp6SqK7T/8XZ1/nLOKMRhR1DYHrxOiYj33b7/9M5Hshn0RchRDZzz/AiwDXX8DGpB1ru9Arsm4opzPjYz7n+jH1/TgPg9UoQTCd753ye8x0YG49fmUC4PI/U32lHL5fv/VgRKz038luPZzSkIrDfLx2z4cCSZ/Vk0CSRHvqfFfdILR+4nYO8jH2Y5SX167byV8yxYbmuZgKOfubfy31uivCfJKL+LtvAs18jvFdSqJeKogIadsXECuoztA2DZB/9ncUasSNhnbRyShF37JfvmvO2tcMF5TXE14afGmbD/VEXQ2eBIu9KDP3LNQ0bZEZj9EZoBR683ht/dvjV1UBdG5Etmy+CkcYQXFV8O2WyLOCUPzDLOG6/HCaW3Q5GRnl5z8w6hGbOwRsroV3fxPtx46LpyTiRbYxy1Xfbh3cYixKtb0mgzIih+5j0bLy/UxtW0g3lOcK7PZPV7E+4mez5ecNm5OCw4z63HRs0ZMhDNgwdKZGTLkJ/t84MMow=
+    secure: 6a6197c2beffbde9896772e390d743b96530e5e5
   file_glob: true
   file: "*.so"
   skip_cleanup: true
