@@ -39,3 +39,5 @@ deploy:
   file_glob: true
   file: "FILE TO UPLOAD"
   skip_cleanup: true
+  on:
+    branch: release
