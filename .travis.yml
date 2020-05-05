@@ -12,6 +12,8 @@ sudo: required
 
 before_install:
   - sudo apt-get update -qq
+  - tools/travis/setup_apt.sh
+  - tools/travis/nuke_pg.sh
 
 install:
   # remove all existing postgresql
