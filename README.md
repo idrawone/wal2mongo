@@ -5,6 +5,8 @@
 ![Last commit](https://img.shields.io/github/last-commit/idrawone/wal2mongo)
 ![Build status](https://img.shields.io/travis/com/idrawone/wal2mongo)
 
+[![Build Status](https://travis-ci.com/idrawone/wal2mongo.svg?branch=v1.0.1)][status]
+
 ### Introduction 
 
 `wal2mongo` is a PostgreSQL logical decoding output plugin designed to make the logical replication easier from `PostgreSQL` to `MongoDB` by formating the output to a JSON-like format accepted by `mongo`.

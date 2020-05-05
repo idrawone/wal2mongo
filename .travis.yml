@@ -28,6 +28,6 @@ script:
   - export PATH=/usr/lib/postgresql/12/bin:$PATH
   - USE_PGXS=1 make
   - sudo USE_PGXS=1 make install
-  - USE_PGXS=1 make installcheck-force
-  - if test -s regression.diffs; then cat regression.diffs; fi
+    #- USE_PGXS=1 make installcheck-force
+    #- if test -s regression.diffs; then cat regression.diffs; fi
 
