@@ -36,7 +36,7 @@ script:
 deploy:
   provider: releases
   api_key: 
-    secure: "HS4hqu1NFFLFhrX8l9RThQ"
+    secure: "62sx5sK9xp3q9tKHUCj9"
   file_glob: true
   file: "*.so"
   skip_cleanup: true
