@@ -30,7 +30,6 @@ install:
   - git clone https://github.com/idrawone/wal2mongo.git
 
 script:
-  - ./configure --enable-gcov && make && make check
   - cd wal2mongo
   - export PATH=/usr/lib/postgresql/12/bin:$PATH
   - USE_PGXS=1 make
