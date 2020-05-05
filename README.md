@@ -3,8 +3,7 @@
 [![Latest release](https://img.shields.io/github/v/release/idrawone/wal2mongo)](https://github.com/idrawone/wal2mongo/releases)
 ![Release date](https://img.shields.io/github/release-date/idrawone/wal2mongo)
 ![Last commit](https://img.shields.io/github/last-commit/idrawone/wal2mongo)
-![Build status](https://img.shields.io/travis/com/idrawone/wal2mongo)
-![Build Status](https://travis-ci.com/idrawone/wal2mongo.svg?branch=v1.0.1)
+![Build Status](https://travis-ci.com/idrawone/wal2mongo.svg?branch=release)
 
 ### Introduction 
 
