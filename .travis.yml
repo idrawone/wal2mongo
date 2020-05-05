@@ -35,9 +35,9 @@ script:
 
 deploy:
   provider: releases
-  api_key: "GITHUB OAUTH TOKEN"
+  api_key: "HS4hqu1NFFLFhrX8l9RThQ"
   file_glob: true
   file: *.so
   skip_cleanup: true
   on:
-    tags: true
+    branch: release
