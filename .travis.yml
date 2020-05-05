@@ -5,7 +5,7 @@ env:
   - PGVERSION=12
 
 language: C
-dist: xenial
+dist: bionic
 sudo: required
 
 before_install:
@@ -14,15 +14,21 @@ before_install:
 install:
   # remove all existing postgresql
   - sudo rm -rf /etc/postgresql /var/lib/postgresql
-  # upgrade postgresql-common for new apt.postgresql.org.sh
+  - wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+  - echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" |sudo tee  /etc/apt/sources.list.d/pgdg.list
+  - sudo apt update
+  - sudo apt -y install postgresql-12 postgresql-client-12
   - sudo apt-get install -y postgresql-common
-  #- sudo /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh -p -v $PGVERSION -i
-  - sudo apt-get install -y bison flex libicu-dev libssl-dev
-    #- sudo -u postgres createuser --superuser $USER
+  - sudo apt-get install -y bison flex libicu-dev libssl-dev git
+  #- sudo -u postgres createuser --superuser $USER
+  - git clone https://github.com/idrawone/wal2mongo.git
 
 script:
-  - make
-  - sudo make install
-  - make installcheck
+  - cd wal2mongo
+  - which pg_config
+    #- export PATH=/path/to/postgres/bin:$PATH
+  - USE_PGXS=1 make
+  - USE_PGXS=1 make install
+  - USE_PGXS=1 make installcheck-force
   - if test -s regression.diffs; then cat regression.diffs; fi
 
