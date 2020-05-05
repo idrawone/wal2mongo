@@ -35,7 +35,8 @@ script:
 
 deploy:
   provider: releases
-  api_key: "62sx5sK9xp3q9tKHUCj9"
+  api_key: 
+    secure: "kSf9oJCzp3+7JNtZZX8wLygOMSxhKNM9uwBhb6Ufb5HbvsimX3pkwrKTnKHX6d9BYmHPujPZwLeWqu9/VNZBQThdu3R6GAjVptb5Z/fpwL4Ew28ClI1860pzbDchN7kBx6qqGE+DJOQO4h+FO+ug1RdKl6iLT2/8voVn1J+D1welym4/oyJ+n0kt6XOwZNb6eeCeixOrLeKrvyG2ndRaIjA3qoyccVh2wu9krI6lVCTp4Rze265jwIrp5ezzAlI0+GZLNk+YKXNSZC2kxx4NFy5jLl9j6nU43MwznLupr6ywCBgd+5tty+CvYhj/9IgcvvG4tqTzCWkVssut9fhgQLlPnN7wI5X27/LXx46O0RrX9isYXkcSBnCT15ai4/GAeggHDbqnHHPlmjp9ETjZ1D6JI34gxwq37/IAiWUmY6NXzlImnggE+vlDuA3m4gCxCjuHXc8ADiUBjmggeLUN4VyLy+uiHo9IBMa9kjTuuRuyOnA1erP6vyMHjy6hMKyaUwM+K0TRNHtmKLZchHj8k7Oo5uxssfN8a3ecMXTKRknJoADTNXki5iaPG9/CblV09KduXNyNJbFmJycRNa24115jlu3F8cPR8Kz7b24XyFrUTwxMqWBaQyQUashaB34Pe+qluPyt0ODfB0pRHVKPHyiYG8hIc+mrQC+Rho6gUZc="
   file_glob: true
   file: "*.so"
   skip_cleanup: true
