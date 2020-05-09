@@ -5,6 +5,7 @@
 ![Coverage](https://img.shields.io/coveralls/github/idrawone/wal2mongo)
 ![Release date](https://img.shields.io/github/release-date/idrawone/wal2mongo)
 ![Last commit](https://img.shields.io/github/last-commit/idrawone/wal2mongo)
+[![Coverage Status](https://coveralls.io/repos/github/idrawone/wal2mongo/badge.svg?branch=v1.0.6)](https://coveralls.io/github/idrawone/wal2mongo?branch=v1.0.6)
 
 
 ### Introduction 

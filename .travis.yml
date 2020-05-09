@@ -37,8 +37,7 @@ script:
   - USE_PGXS=1 make installcheck-force
   - if test -s regression.diffs; then cat regression.diffs; fi
 
-after_success:
-        #- sudo chmod 666 *.gcda
+after_success: coveralls
   - coveralls --exclude wal2mongo.c --gcov-options '\-lp'
 
 deploy:
