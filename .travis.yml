@@ -28,6 +28,7 @@ install:
   - sudo sed -i 's/#wal_level = replica/wal_level = logical/g' /etc/postgresql/12/main/postgresql.conf
   - sudo service postgresql@12-main restart
   - git clone https://github.com/idrawone/wal2mongo.git
+  - pip install --upgrade --user git+git://github.com/eddyxu/cpp-coveralls.git
 
 script:
   - cd wal2mongo
@@ -36,11 +37,6 @@ script:
   - sudo USE_PGXS=1 make install
   - USE_PGXS=1 make installcheck-force
   - if test -s regression.diffs; then cat regression.diffs; fi
-  - pip install --upgrade --user git+git://github.com/eddyxu/cpp-coveralls.git
-  - cmake -DENABLE_COVERAGE=ON -DCMAKE_CXX_COMPILER="g++-6" ..
-  - make
-  - make test
-  - cd ..
 
 after_success:
   - coveralls --gcov-options '\-lp'
