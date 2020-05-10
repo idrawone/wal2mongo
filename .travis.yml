@@ -41,12 +41,9 @@ script:
   - make
   - make test
   - cd ..
-  - |
-    coveralls --build-root build --gcov-options '\-lp' \
-      -e wal2mongo.c
 
-      #after_success:
-      #  - coveralls --exclude wal2mongo.c --gcov-options '\-lp'
+after_success:
+  - coveralls --gcov-options '\-lp'
 
 deploy:
   provider: releases
